@@ -1,1 +1,11 @@
 data/
+# Ignore TLS/SSL certificates and keys
+*.pem
+*.crt
+*.cer
+*.key
+
+# Specific common names, if applicable (e.g., for local development)
+certs/
+keys/
+ssl/
