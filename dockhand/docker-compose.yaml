@@ -8,3 +8,4 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./data:/app/data 
+      - /srv/docker-lab/stacks:/srv/docker-lab/stacks

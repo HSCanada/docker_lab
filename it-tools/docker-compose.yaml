@@ -1,9 +1,0 @@
-services:
-  dockhand:
-    image: corentinth/it-tools:latest
-    container_name: it-tools
-    restart: unless-stopped
-    ports:
-      - 8080:80
-
-# docker run -d --name it-tools --restart unless-stopped -p 8080:80 corentinth/it-tools:latest
