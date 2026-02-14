@@ -28,7 +28,8 @@ services:
     #ports:
     #  - "80:80"
     environment:
-      - VIRTUAL_HOST=whoami.dev.tcrow.io
+      - VIRTUAL_HOST=web.br.hsa.ca
+        #- VIRTUAL_HOST=whoami.br.hsa.ca
       - VIRTUAL_PORT=8000
       #- VIRTUAL_PORT=443
       #- VIRTUAL_PROTO=https

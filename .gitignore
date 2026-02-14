@@ -9,3 +9,5 @@ data/
 certs/
 keys/
 ssl/
+
+*.gguf
