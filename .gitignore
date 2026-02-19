@@ -1,4 +1,3 @@
-data/
 # Ignore TLS/SSL certificates and keys
 *.pem
 *.crt
@@ -10,4 +9,8 @@ certs/
 keys/
 ssl/
 
+# custom
+letsencrypt/
+data/
 *.gguf
+.env

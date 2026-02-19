@@ -1,16 +1,16 @@
+networks:
+  mynetwork:
+    external: true
+
 services:
   it-tools:
-    image: corentinth/it-tools:2024.10.22-7ca5933
+    #    image: corentinth/it-tools:2024.10.22-7ca5933
+    image: corentinth/it-tools:latest
     container_name: it-tools
     networks:
       - mynetwork
     restart: unless-stopped
     ports:
       - 8081:80
-        #    environment:
-        #      - VIRTUAL_HOST=it-tools.br.hsa.ca
-        #      - VIRTUAL_PORT=8081
         
-networks:
-  mynetwork:
-    external: true
+
