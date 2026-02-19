@@ -1,0 +1,18 @@
+networks:
+  vaultwarden:
+    external: false
+
+services:
+  vaultwarden:
+    image: vaultwarden/server:1.35.3
+    container_name: vaultwarden
+    networks:
+      - vaultwarden
+    restart: unless-stopped
+    environment:
+      #DOMAIN: "https://vw.domain.tld"
+      SIGNUPS_ALLOWED: "true"
+    volumes:
+      - ./vw-data/:/data/
+    ports:
+      - 11001:80
