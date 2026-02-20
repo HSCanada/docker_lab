@@ -1,7 +1,6 @@
 networks:
   mynetwork:
     external: true
-
 services:
   app:
     image: 'jc21/nginx-proxy-manager:2'
