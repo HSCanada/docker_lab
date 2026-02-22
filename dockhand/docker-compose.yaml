@@ -1,3 +1,7 @@
+networks:
+  mynetwork:
+    external: true
+
 services:
   dockhand:
     image: fnsys/dockhand:v1.0.18
@@ -13,6 +17,3 @@ services:
 volumes:
   dockhand_data:
 
-networks:
-  mynetwork:
-    external: true
