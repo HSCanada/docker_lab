@@ -14,6 +14,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - dockhand_data:/app/data 
+      - /srv/docker_lab/stacks:/srv/docker_lab/stacks
 volumes:
   dockhand_data:
 
