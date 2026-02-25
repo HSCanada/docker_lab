@@ -10,7 +10,7 @@ services:
       - vaultwarden
     restart: unless-stopped
     environment:
-      DOMAIN: "https://vw.dev.tcrow.io"
+      DOMAIN: ${VW_DOMAIN}
       SIGNUPS_ALLOWED: "true"
     volumes:
       - ./data/:/data/
